@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "lib": ["dom", "es2015"],
+        "module": "commonjs",
+        "listEmittedFiles": true,
+        "newLine": "CRLF",
+        "strict": true,
+        "pretty": true,
+        "removeComments": true
+    },
+
+    "include": ["src/"],
+
+    "exclude": ["node_modules", "dist", "**/*.spec.ts"],
+
+    "formatCodeOptions": {
+        "indentSize": 2,
+        "tabSize": 2
+    }
+}
