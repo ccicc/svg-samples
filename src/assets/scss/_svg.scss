@@ -1,0 +1,75 @@
+.dash-animate {
+    .rect-path {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 10px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+    }
+
+    .rect-fill {
+        fill: none;
+        stroke: #006633;
+        stroke-width: 10px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        stroke-dasharray: 0, 920;
+        stroke-dashoffset: 0;
+        animation: dash-rect-fill 5s linear infinite alternate;
+    }
+
+    .sin-fill {
+        fill: none;
+        stroke: #006633;
+        stroke-width: 10px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 450;
+        stroke-dashoffset: 450;
+        animation: dash-sin-fill 3s ease-in-out infinite alternate;
+    }
+}
+
+.multi-dash-animate {
+    .g-dash-line1, .g-dash-line2, .g-dash-rect1, .g-dash-circle1, .g-dash-rect2, .g-dash-circle2 {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 2px;
+    }
+
+    .g-dash-line1 {
+        stroke-dasharray: 396;
+        stroke-dashoffset: 396;
+        animation: multi-dash-fill 0.5s ease-in forwards;
+    }
+
+    .g-dash-line2 {
+        stroke-dasharray: 396;
+        stroke-dashoffset: 396;
+        animation: multi-dash-fill 0.5s ease-out 0.5s forwards;
+    }
+
+    .g-dash-rect1 {
+        stroke-dasharray: 960;
+        stroke-dashoffset: 960;
+        animation: multi-dash-fill 0.5s linear 1s forwards;
+    }
+
+    .g-dash-circle1 {
+        stroke-dasharray: 960;
+        stroke-dashoffset: 960;
+        animation: multi-dash-fill 0.5s ease-in 1s forwards;
+    }
+
+    .g-dash-rect2 {
+        stroke-dasharray: 960;
+        stroke-dashoffset: -960;
+        animation: multi-dash-fill 1s ease-out 1s forwards;
+    }
+
+    .g-dash-circle2 {
+        stroke-dasharray: 960;
+        stroke-dashoffset: -960;
+        animation: multi-dash-fill 1s linear 1s forwards;
+    }
+}

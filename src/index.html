@@ -33,7 +33,14 @@
         <!-- <path d="M 0 200 h 400 v 200 h -400" fill="#529BB3" stroke-width="0" /> -->
       </svg>
 
-      <svg id="waveform2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" version="1.1">
+      <svg
+        id="waveform2"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="400"
+        height="400"
+        version="1.1"
+      >
         <defs>
           <pattern id="grid" width="20" height="20" x="0" y="0" patternUnits="userSpaceOnUse">
             <path fill="transparent" stroke="#ccc" stroke-width="1" d="M 0 0 H 20 V 20" />
@@ -90,6 +97,50 @@
           </pattern>
         </defs>
         <rect x="0" y="0" width="400" height="400" fill="url(#grid)" stroke="#ccc" />
+      </svg>
+
+      <svg
+        class="dash-animate"
+        width="400"
+        height="400"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs>
+          <pattern id="grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 0 0 H 20 V 20" fill="transparent" stroke="#ccc" stroke-width="1" />
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="400" height="400" fill="url(#grid)" stroke="#ccc" />
+        <polyline points="40,20 360,20 360,120 40,120 40,20" fill="none" class="rect-path" />
+        <polyline points="40,20 360,20 360,120 40,120 40,20" fill="none" class="rect-fill" />
+
+        <path d="M 40,280 Q 120 360, 200, 280 t 160 0" fill="none" class="sin-fill" />
+      </svg>
+
+      <svg
+        class="multi-dash-animate"
+        width="400"
+        height="400"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs>
+          <pattern id="grid" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
+            <path d="M 0 0 H 20 V 20" fill="transparent" stroke="#ccc" stroke-width="1" />
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="400" height="400" fill="url(#grid)" stroke="#ccc" />
+        <line x1="60" y1="60" x2="340" y2="340" class="g-dash-line1" />
+        <line x1="340" y1="60" x2="60" y2="340" class="g-dash-line1" />
+        <line x1="200" y1="60" x2="200" y2="340" class="g-dash-line2" />
+        <line x1="60" y1="200" x2="340" y2="200" class="g-dash-line2" />
+        <rect x="80" y="80" width="240" height="240" class="g-dash-rect1" rx="20" ry="20" />
+        <circle cx="200" cy="200" r="100" class="g-dash-circle1" />
+        <rect x="140" y="140" width="120" height="120" rx="20" ry="20" class="g-dash-rect2" />
+        <circle cx="200" cy="200" r="40" class="g-dash-circle2" />
       </svg>
     </div>
   </body>

@@ -1,0 +1,23 @@
+@mixin keyframes_dashoffset($name) {
+    @keyframes #{$name} {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+
+@keyframes dash-rect-fill {
+    from {
+        stroke-dasharray: 0, 920;
+    }
+
+    to {
+        stroke-dasharray: 920, 920;
+    }
+}
+@include keyframes_dashoffset(dash-sin-fill);
+
+@include keyframes_dashoffset(multi-dash-fill);
+// @include keyframes_dashoffset(multi-line2-fill, 280, 0);
+// @include keyframes_dashoffset(multi-rect1-fill, 960, 0);
+// @include keyframes_dashoffset(multi-circle1-fill, 630, 0);
